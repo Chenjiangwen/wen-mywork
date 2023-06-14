@@ -1,0 +1,7 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: gateway-ssl-cert
+spec:
+  domains:
+    - app.featuresfly.com

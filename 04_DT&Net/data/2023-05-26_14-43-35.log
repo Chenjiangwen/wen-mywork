@@ -1,0 +1,8 @@
+2023-05-26 14:43:35,235 - net - INFO - ================================1、=============================================
+2023-05-26 14:43:36,878 - net - INFO - ================================3、=============================================
+2023-05-26 15:30:55,775 - net - INFO - Batch Size = 1 Accuracy of the network with batch size 1: 43 %
+2023-05-26 15:40:35,055 - net - INFO - Batch Size = 5 Accuracy of the network with batch size 5: 43 %
+2023-05-26 15:43:06,471 - net - INFO - Batch Size = 20 Accuracy of the network with batch size 20: 40 %
+2023-05-26 15:44:32,419 - net - INFO - Batch Size = 100 Accuracy of the network with batch size 100: 34 %
+2023-05-26 15:45:53,209 - net - INFO - Batch Size = 300 Accuracy of the network with batch size 300: 29 %
+2023-05-26 15:45:53,209 - net - INFO - Maximum test accuracy: 43.5800 achieved with mini-batch size of 5.

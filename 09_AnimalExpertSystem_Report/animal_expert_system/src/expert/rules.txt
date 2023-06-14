@@ -1,0 +1,19 @@
+Has hair->Mammal
+Produces milk->Mammal
+Has feathers->Bird
+Can fly&Lays eggs->Bird
+Eat meat->Carnivorous
+Sharp teeth&Claws&Forward-facing eyes->Carnivorous
+Mammal&Hoofed->Ungulate
+Mammal&Ruminant->Ungulate
+Has scales&Lays eggs->Reptile
+Has fins&Lives in water->Fish
+Lives in water&Breathes air&Has smooth&Moist skin->Amphibian
+Has fur&Lays eggs&Produces milk->Monotreme
+Has fur&Pouch&Produces milk->Marsupial
+Mammal&Carnivorous&Yellow-brown fur&Dark spots->Leopard
+Mammal&Carnivorous&Yellow-brown fur&Black stripes->Tiger
+Ungulate&Long neck&Long legs&Dark spots->Giraffe
+Ungulate&Black stripes->Zebra
+Bird&Flightless&Long neck&Long legs&Black-and-white coloration->Ostrich
+Bird&Swim&Flightless&Black-and-white coloration->Penguin

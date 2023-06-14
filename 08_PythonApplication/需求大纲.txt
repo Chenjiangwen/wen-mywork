@@ -1,0 +1,96 @@
+一、 Student Information Center
+You are asked to create a program for a Student Information Center. This program gives these menu 
+	options to the users to choose from:
+Main Menu
+Choose any of these options:
+1. Add a course
+2. Add a student 
+3. Add a teacher
+4. List all students
+5. List all teachers 
+6. Search for a student by their name or student ID
+7. List the teachers and their courses for a student
+8. Show the GPA of a course
+Enter zero to exit the program.
+Enter your choice: #
+
+
+This program saves its information inside three text  les: student_info.txt , course_info.txt and 
+teacher_info.txt . These three files might have existed before or they might have been new. If they 
+exist your program will append to them, if they do not exist your program will create these files.
+
+	student_info.txt file 
+The student's records in this program are stored in a text  le called student_info.txt . Each student 
+has these details in this text file: 
+Student ID
+Student name
+Program code
+Courses: including course code, course score
+The format of student_info.txt  le should be: 
+2067564342,Albert Smith,CS123,CSC300:65,ITS230:80
+
+
+	course_info.txt file
+The course information will be saved in a text  le called course_info.txt , which has the following 
+details: 
+Course code
+Course name
+Credit hour
+The format of course_info.txt file should be: 
+ITS230,Object Oriented Programming,3
+CSC300,Introduction to programming,3
+
+
+	teacher_info.txt file 
+The teacher's details will be saved in a  le called teacher_info.txt and has these details: 
+Staff ID
+Staff name
+Courses codes
+The format of teacher_info.txt file should be: 
+1089786,Franklin Dowyer,CSC230,ITS230
+
+	The program
+The program continues to print the above menu until the user enters zero to exit. Before the program 
+prompt the user with the menu, it adds an empty new line before the menu. Look at the sample run 
+of the program at the end of the description. 
+Each menu option in your program has to be written as a function. You have to name these functions 
+according to this naming convention: 
+1. Function for adding a course (function should be called: add_course )
+2. Function for adding a student (function should be called: add_student )
+3. Function for adding a teacher (function should be called: add_teacher )
+4. Function for listing all students (function should be called: list_students )
+5. Function for listing all teachers (function should be called: list_teachers )
+6. Function to search for a student by their name or student ID (function should be called:search_student )
+7. Function for listing the teachers and their courses for a student (function should be called: list_teachers_courses )
+8. Function to show the GPA of a course (function should be called: course_gpa )
+For example, in the menu option 1 , to add a product you are required to call add_course() .
+The program continues to print the above menu until the user enters 0 to exit.
+
+
+	Error handling
+All inputs in your program should be checked: 
+Wrong input for menu selection, anything other than the speci ed menu options is not 
+accepted. The error message is: Wrong menu selection.
+The length of the student ID should be 10 characters. The error message is: The length of the 
+student ID should be 10 characters.
+The length of the teacher ID should be 7 characters. The error message is: The length of the 
+staff ID should be 7 characters.
+The length of the program code entered should be 5. The error message is: The length of the 
+program code entered should be 5.
+The length of course codes entered should be 6. The error message is: The length of course 
+codes entered should be 6.
+The length of the student, teacher, and course name should be between 1 and 40 characters 
+inclusive. The error message is: The length of the name should be between 1 and 40 
+characters inclusive.
+The student, teacher, and course names should be alphabetic. The error message is: The name 
+should be alphabetic.
+The credit hour for each course should be an integer number more than 0 and less or equal to 
+5. The error message is: The credit hour for each course should be an integer between 
+1 and 5 inclusive.
+The score for each course should be in the range of 0 to 100. The error message is: The score 
+for each course should be in the range of 0 to 100.
+The score for each course should be a  oat value. The error message is: Score should be a 
+float value.
+Your program is case-insensitive, and if the user enters anything in capital letters or lower 
+letters it will be treated the same.
+

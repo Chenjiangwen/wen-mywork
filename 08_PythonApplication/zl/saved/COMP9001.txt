@@ -1,0 +1,65 @@
+Start game
+Start shop
+Bought 1 cheddar
+Bought 2 cheddar
+Bought 3 cheddar
+Bought 4 cheddar
+Bought 0 cheddar
+End shop
+Start hunt
+Caught a Brown mouse!
+Caught a Brown mouse!
+Caught a Brown mouse!
+Caught a Brown mouse!
+Nothing happens.
+Caught a Brown mouse!
+Nothing happens.
+Caught a Brown mouse!
+Caught a Brown mouse!
+Nothing happens.
+Nothing happens. You are out of cheese!
+Nothing happens. You are out of cheese!
+End hunt
+Start shop
+Bought 9 cheddar
+Bought 10 cheddar
+Bought 11 cheddar
+Bought 12 cheddar
+Bought 13 cheddar
+End shop
+Start hunt
+Caught a Brown mouse!
+Nothing happens.
+Nothing happens.
+Caught a Brown mouse!
+Caught a Brown mouse!
+Nothing happens.
+Caught a Brown mouse!
+Caught a Brown mouse!
+Nothing happens.
+Nothing happens.
+Nothing happens.
+Caught a Brown mouse!
+Nothing happens.
+Nothing happens.
+Nothing happens.
+Nothing happens.
+Caught a Brown mouse!
+Nothing happens.
+Nothing happens.
+Do nothing
+Nothing happens.
+Nothing happens.
+Caught a Brown mouse!
+Caught a Brown mouse!
+Caught a Brown mouse!
+Caught a Brown mouse!
+Caught a Brown mouse!
+Nothing happens.
+Nothing happens.
+Caught a Brown mouse!
+Caught a Brown mouse!
+End hunt
+Start shop
+End shop
+End game

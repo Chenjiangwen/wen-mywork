@@ -1,0 +1,48 @@
+name: Deploy to GAE
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - fe/**
+  workflow_dispatch:  
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        working-directory: ./fe
+        run: npm install
+
+      - name: Build app
+        working-directory: ./fe
+        run: npm run build
+
+      - name: Run tests
+        working-directory: ./fe
+        run: npm test
+
+      - name: Set up gcloud Cloud SDK environment
+        id: 'auth'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          create_credentials_file: true
+          workload_identity_provider: ${{secrets.GCP_WORKLOAD_IDENTITY_PROVIDER_NAME}}
+          service_account: ${{secrets.GCP_WORKLOAD_IDENTITY_SA_EMAIL}}
+          
+      - name: 'Deploy to GAE'
+        working-directory: ./fe
+        run: |
+          gcloud app deploy
+

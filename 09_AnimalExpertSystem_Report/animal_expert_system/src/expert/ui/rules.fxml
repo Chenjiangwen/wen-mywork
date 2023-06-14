@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="520.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="expert.ui_con.RuleController">
+    <Text layoutX="176.0" layoutY="36.0" opacity="0.87" strokeType="OUTSIDE" strokeWidth="0.0" text="Animal Recognition Expert System">
+        <font>
+            <Font name="System Bold Italic" size="22.0" />
+        </font>
+        <fill>
+            <LinearGradient>
+                <stops>
+                    <Stop color="BLACK" />
+                    <Stop color="#654f4f" offset="1.0" />
+                </stops>
+            </LinearGradient>
+        </fill>
+    </Text>
+    <Text fill="#333333e3" layoutX="12.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conditions: To separate multiple conditions, please use '&amp;' as a delimiter. " wrappingWidth="533.0">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Text>
+    <Text fill="#333333e3" layoutX="541.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" wrappingWidth="59.999969482421875">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Text>
+    <TextField fx:id="conditionTextFieldComponent" layoutX="12.0" layoutY="417.0" prefHeight="39.0" prefWidth="516.0" promptText="For example: Mammals &amp; Bipedal &amp; Tool users." />
+    <Button fx:id="addButtonComponent" layoutX="541.0" layoutY="473.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: rgba(99,149,111,0.77);" text="Add" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="19.0" />
+        </font>
+        <effect>
+            <Blend mode="DARKEN" />
+        </effect>
+    </Button>
+    <RadioButton fx:id="isAddToAimsRadioButtonComponent" layoutX="425.0" layoutY="483.0" mnemonicParsing="false" text="Add to aims" textFill="#1b1a1a">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+    </RadioButton>
+    <Button fx:id="deleteButtonComponent" layoutX="14.0" layoutY="472.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: rgba(221,0,0,0.53);" text="Del" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="19.0" />
+        </font>
+    </Button>
+    <TableView fx:id="tableViewComponent" editable="true" layoutX="12.0" layoutY="73.0" prefHeight="308.0" prefWidth="676.0">
+        <columns>
+            <TableColumn fx:id="idTableColumnComponent" prefWidth="88.0" text="Number" />
+            <TableColumn fx:id="conditionTableColumnComponent" prefWidth="420.0" text="Condition" />
+            <TableColumn fx:id="resultTableColumnComponent" prefWidth="150.0" resizable="false" text="Result:" />
+        </columns>
+    </TableView>
+    <TextField fx:id="resultTextFieldComponent" layoutX="541.0" layoutY="417.0" prefHeight="39.0" prefWidth="147.0" promptText="For example: Human." />
+    <TextField fx:id="idTextFieldComponent" layoutX="104.0" layoutY="472.0" prefHeight="39.0" prefWidth="158.0" promptText="Number, for example: 2" />
+    <Text fill="#7c7676e3" layoutX="12.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modification description: Simply double-click on the cell, make the changes and press Enter to save." wrappingWidth="676.0">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+    </Text>
+</Pane>

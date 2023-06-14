@@ -1,0 +1,44 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #5f61c6;
+    .icon {
+      margin-right: 10px;
+    }
+  }
+  .searchInput {
+    margin-left: auto;
+    width: 260px;
+  }
+}
+
+.lists {
+  height: 45px;
+}
+
+.buttons {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.renderSwitch {
+  padding-top: 3px;
+}
+
+.featureName {
+  color: #5f61c6;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.featureId {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+.container{
+  padding-top: 20px;
+  height: 100vh;
+  min-width: 250px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 246, 246);
+
+  .menu{
+    padding-top: 15px;
+    height: 80%;
+    flex: 1;
+    min-height: 500px;
+    overflow-y: scroll;
+    background-color: rgb(246, 246, 246);
+
+  }
+  .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    min-height: 20px;
+    border-inline-end:1px solid rgba(5, 5, 5, 0.06);
+    border-radius: 2px;
+    font-weight: bold;
+    .icon{
+      margin-right: 10px;
+    }
+  }
+  .logoutButton {
+    padding-bottom: 20px;
+    height: 15%;
+    min-height: 20px;
+    border-inline-end:1px solid rgba(5, 5, 5, 0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

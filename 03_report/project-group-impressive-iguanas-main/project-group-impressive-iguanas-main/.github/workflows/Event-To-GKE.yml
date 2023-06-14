@@ -1,0 +1,74 @@
+name: Build and Deploy to GKE (event)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - backend/event/**
+  workflow_dispatch:
+
+env:
+  PROJECT_ID: wired-yeti-383208
+  GKE_CLUSTER: main
+  GKE_ZONE: us-central1
+  DEPLOYMENT_NAME: event
+  CHART_NAME: event
+  IMAGE: event
+  ARTIFACT_REGISTRY: microservices
+
+
+jobs:
+  setup-build-publish-deploy:
+    name: Setup, Build, Publish, and Deploy
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up gcloud Cloud SDK environment
+      id: 'auth'
+      uses: 'google-github-actions/auth@v1'
+      with:
+        create_credentials_file: true
+        workload_identity_provider: ${{secrets.GCP_WORKLOAD_IDENTITY_PROVIDER_NAME}}
+        service_account: ${{secrets.GCP_WORKLOAD_IDENTITY_SA_EMAIL}}
+
+    # Build the Docker image
+    - name: Build
+      working-directory: ./backend/event
+      run: |-
+        docker build --tag "us-central1-docker.pkg.dev/$PROJECT_ID/$ARTIFACT_REGISTRY/$IMAGE:$GITHUB_SHA" --build-arg GITHUB_SHA="$GITHUB_SHA" --build-arg GITHUB_REF="$GITHUB_REF" .
+
+    # Configure Docker to use the gcloud command-line tool as a credential
+    # helper for authentication
+    - run: |-
+        gcloud --quiet auth configure-docker us-central1-docker.pkg.dev
+
+    # Push the Docker image to Google Container Registry
+    - name: Publish
+      run: |-
+        docker push "us-central1-docker.pkg.dev/$PROJECT_ID/$ARTIFACT_REGISTRY/$IMAGE:$GITHUB_SHA"
+
+
+    # Get the GKE credentials so we can deploy to the cluster
+    - uses: google-github-actions/get-gke-credentials@v1
+      with:
+        cluster_name: ${{ env.GKE_CLUSTER }}
+        location: ${{ env.GKE_ZONE }}
+    
+        # Install helm
+    - name: Install Helm
+      run: |-
+        curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+       
+    - name: Deploy
+      working-directory: ./infra/be/helm/event
+      run: |
+        helm upgrade $CHART_NAME . --set image.tag=$GITHUB_SHA
+        kubectl rollout status deployment/$DEPLOYMENT_NAME
+

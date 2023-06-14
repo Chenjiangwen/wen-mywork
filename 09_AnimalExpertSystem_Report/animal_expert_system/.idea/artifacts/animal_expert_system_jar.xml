@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="animal_expert_system:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/animal_expert_system_jar</output-path>
+    <root id="archive" name="animal_expert_system.jar">
+      <element id="module-output" name="animal_expert_system" />
+    </root>
+  </artifact>
+</component>
