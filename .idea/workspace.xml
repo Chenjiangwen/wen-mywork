@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74e8c1f6-9721-4acc-afd2-1886c85e79b5" name="更改" comment="修改">
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward-1_2545.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward-1_2546.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward-1_2547.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward-graph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_1-1_187.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_1-1_188.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_1-1_189.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_1-graph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_2-1_1106.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_2-1_1107.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_2-1_1108.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/model_fashion/checkpoint_fashion_forward_2-graph.meta" afterDir="false" />
+    </list>
+    <list id="35cdf6e9-4e88-4e83-be25-de9553523d24" name="修改" comment="">
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/Fashionmnist/test/t10k-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/Fashionmnist/test/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/Fashionmnist/train/train-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/Fashionmnist/train/train-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/feedforward/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/实验十一_mindspore实践.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十一_MindSpore实践/实验报告模板.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/data/t10k-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/data/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/data/train-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/data/train-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_100.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_200.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_300.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_400.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_500.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_600.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-1_700.ckpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/model/lenet_ckpt-graph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/实验十二-mindspore实践-卷积神经网络.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/实验报告模板.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十：特征选择与分类/实验十：特征选择与分类.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十：特征选择与分类/实验报告模板.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十：特征选择与分类/隐形眼镜数据集/lenses_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_practice/实验十：特征选择与分类/隐形眼镜数据集/lenses_names.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RVOrFM4FrNOsUYRolSFLJ9Y3e5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="part-time-work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/15_/实验十一_MindSpore实践/feedforward" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_/实验十一_MindSpore实践/feedforward/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="part-time-work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/15_/实验十二-mindspore实践-卷积神经网络/LeNet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_/实验十二-mindspore实践-卷积神经网络/LeNet/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="74e8c1f6-9721-4acc-afd2-1886c85e79b5" name="更改" comment="" />
+      <changelist id="35cdf6e9-4e88-4e83-be25-de9553523d24" name="修改" comment="" />
+      <created>1687331979597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687331979597</updated>
+      <workItem from="1687331982391" duration="854000" />
+      <workItem from="1687497465816" duration="391000" />
+      <workItem from="1687498252131" duration="484000" />
+      <workItem from="1687498932190" duration="7953000" />
+      <workItem from="1687509216871" duration="1342000" />
+      <workItem from="1687510962582" duration="440000" />
+      <workItem from="1687511429615" duration="693000" />
+      <workItem from="1687512150854" duration="1472000" />
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1687511259709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687511259709</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新">
+      <created>1687511606995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687511606995</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <created>1687511791684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687511791684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改">
+      <created>1687512584042</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687512584042</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新" />
+    <MESSAGE value="update" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/15_practice/实验十二-mindspore实践-卷积神经网络/LeNet/train.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main 覆盖结果" MODIFIED="1687509235227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_/实验十一_MindSpore实践/feedforward" />
+    <SUITE FILE_PATH="coverage/train_py$main.coverage" NAME="main 覆盖结果" MODIFIED="1687504353664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_/实验十一_MindSpore实践/feedforward" />
+    <SUITE FILE_PATH="coverage/main_py$train.coverage" NAME="train 覆盖结果" MODIFIED="1687509558926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_/实验十二-mindspore实践-卷积神经网络/LeNet" />
+    <SUITE FILE_PATH="coverage/train_py$train.coverage" NAME="train 覆盖结果" MODIFIED="1687504515316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/15_/实验十二-mindspore实践-卷积神经网络/LeNet" />
+  </component>
+</project>
