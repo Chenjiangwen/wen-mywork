@@ -1,16 +1,12 @@
 import os
 import struct
-import sys
 from easydict import EasyDict as edict
-
-import matplotlib.pyplot as plt
 import numpy as np
 
 import mindspore
 import mindspore.dataset as ds
 import mindspore.nn as nn
 from mindspore import context
-from mindspore.nn.metrics import Accuracy
 from mindspore.train import Model
 from mindspore.train.callback import ModelCheckpoint, CheckpointConfig, LossMonitor, TimeMonitor
 from mindspore import Tensor
