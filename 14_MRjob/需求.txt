@@ -1,0 +1,119 @@
+Problem statement:
+Detecting popular and trending topics from news articles is important for public
+opinion monitoring. In this project, your task is to perform text data analysis over a
+dataset of Australian news from ABC (Australian Broadcasting Corporation) using
+MRJob. The problem is to compute the weights of each term regarding each year in
+the news articles dataset and find out the most important terms in each year whose
+weights are larger than a given threshold.
+Input files:
+The dataset you are going to use contains data on news headlines published over
+several years. In this text file, each line is a headline of a news article, in the format
+of "date,term1 term2 ... ... ". The date and text are separated by a comma, and the
+terms are separated by a space character. A sample file is like below (note that the
+stop words like “to”, “the”, and “in” have already been removed from the dataset):
+20191124,woman stabbed adelaide shopping centre
+20191204,economy continue teetering edge recession
+20200401,coronanomics learnt coronavirus economy
+20200401,coronavirus home test kits selling chinese community
+20201015,coronavirus pacific economy foriegn aid china
+20201016,china builds pig apartment blocks guard swine flu
+20211216,economy starts bounce unemployment
+20211224,online shopping rise due coronavirus
+20211229,china close encounters elon musks
+
+Term weights computation:
+To compute the weight for a term regarding a year, please use the TF/IDF model.
+Specifically, the TF and IDF can be computed as:
+• TF(term t, year y) = the frequency of t in y
+• IDF(term t, dataset D) = log10 (the number of years in D/the number of years having t)
+Finally, the term weight of term t regarding the year y is computed as:
+• Weight(term t, year y, dataset D) = TF(term t, year y)* IDF(term t, dataset D)
+Please import math and use math.log10() to compute the term weights.
+Code format:
+import math
+from mrjob.job import MRJob
+from mrjob.step import MRStep
+from mrjob.compat import jobconf_from_env
+
+# ---------------------------------!!! Attention Please!!!------------------------------------
+# Please add more details to the comments for each function. Clarifying the input 
+# and the output format would be better. It's helpful for tutors to review your code.
+
+# We will test your code with the comand like below:
+# python3 project1.py -r hadoop hdfs_input -o hdfs_output --jobconf myjob.settings.years=20 --jobconf myjob.settings.beta=0.5 --jobconf mapreduce.job.reduces=2
+
+# Please make sure that your code can be compiled on Hadoop before submission.
+# ---------------------------------!!! Attention Please!!!------------------------------------
+
+class proj1(MRJob):    
+
+    # define your own mapreduce functions
+
+    SORT_VALUES = True
+
+    JOBCONF = { 
+        # add your configurations here
+    }
+
+    def steps(self):
+        return [
+            # you decide the number of steps used
+        ]
+
+if __name__ == '__main__':
+    proj1.run()
+Command of running your code:
+To reduce the difficulty of the project, you are allowed to pass the total number of
+years to your job. We will also use more than 1 reducer to test your code. Assuming
+there are 20 years, β is set to 0.5, and we use 2 reducers, we will use the command
+like below to run your code:
+$ python3 project1.py -r hadoop hdfs_input -o hdfs_output --jobconf myjob.settings.years=20 --
+jobconf myjob.settings.beta=0.5 --jobconf mapreduce.job.reduces=2
+• hdfs_input: input file in HDFS, e.g., “hdfs://localhost:9000/user/comp9313/input”
+• hdfs_output: output folder in HDFS, e.g., “hdfs://localhost:9000/user/comp9313/output”
+• You can access the total number of years and the value of β in your program
+like “N = jobconf_from_env('myjob.settings.years')”, (use “from mrjob.compat import
+jobconf_from_env” in your code).
+Output format:
+You need to output all terms whose term weights regarding each year are larger than
+the given threshold value β (note that one term could appear in different years). The
+format of each line is: “Term\tYear,Weight”. You need to sort the results first by the
+terms in alphabetical order and then by the years in descending order.
+For example, given the above data set and β=0.4, the output can be checked at ：
+"adelaide"	"2019,0.47712125471966244"
+"aid"	"2020,0.47712125471966244"
+"apartment"	"2020,0.47712125471966244"
+"blocks"	"2020,0.47712125471966244"
+"bounce"	"2021,0.47712125471966244"
+"builds"	"2020,0.47712125471966244"
+"centre"	"2019,0.47712125471966244"
+"chinese"	"2020,0.47712125471966244"
+"close"	"2021,0.47712125471966244"
+"community"	"2020,0.47712125471966244"
+"continue"	"2019,0.47712125471966244"
+"coronanomics"	"2020,0.47712125471966244"
+"coronavirus"	"2020,0.5282737771670437"
+"due"	"2021,0.47712125471966244"
+"edge"	"2019,0.47712125471966244"
+"elon"	"2021,0.47712125471966244"
+"encounters"	"2021,0.47712125471966244"
+"flu"	"2020,0.47712125471966244"
+"foriegn"	"2020,0.47712125471966244"
+"guard"	"2020,0.47712125471966244"
+"home"	"2020,0.47712125471966244"
+"kits"	"2020,0.47712125471966244"
+"learnt"	"2020,0.47712125471966244"
+"musks"	"2021,0.47712125471966244"
+"online"	"2021,0.47712125471966244"
+"pacific"	"2020,0.47712125471966244"
+"pig"	"2020,0.47712125471966244"
+"recession"	"2019,0.47712125471966244"
+"rise"	"2021,0.47712125471966244"
+"selling"	"2020,0.47712125471966244"
+"stabbed"	"2019,0.47712125471966244"
+"starts"	"2021,0.47712125471966244"
+"swine"	"2020,0.47712125471966244"
+"teetering"	"2019,0.47712125471966244"
+"test"	"2020,0.47712125471966244"
+"unemployment"	"2021,0.47712125471966244"
+"woman"	"2019,0.47712125471966244"
