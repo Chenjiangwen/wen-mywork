@@ -1,0 +1,7 @@
+dlib==19.19.0
+numpy==1.24.3
+opencv_python==4.7.0.72
+PyQt5==5.15.9
+pyqt5_plugins==5.15.9.2.3
+PyQt5_sip==12.12.1
+pyqtgraph==0.13.3
