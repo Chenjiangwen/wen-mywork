@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import cv2
 import numpy as np
 # Form implementation generated from reading ui file '03.ui'
 #
