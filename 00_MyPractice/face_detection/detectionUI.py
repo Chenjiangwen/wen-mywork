@@ -9,7 +9,6 @@ import numpy as np
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QPalette, QColor
 from pyqtgraph import PlotWidget
 import pyqtgraph as pg
 
