@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import cv2
 import numpy as np
 # Form implementation generated from reading ui file '03.ui'
 #
@@ -10,7 +9,6 @@ import numpy as np
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QPalette, QColor
 from pyqtgraph import PlotWidget
 import pyqtgraph as pg
 
@@ -188,14 +186,3 @@ class Ui_MainWindow(object):
         self.menu.setTitle(_translate("MainWindow", "菜单"))
         self.menu_2.setTitle(_translate("MainWindow", "开始"))
         self.menu_3.setTitle(_translate("MainWindow", "关于我"))
-
-
-# if __name__ == "__main__":
-#     import sys
-#     app = QtWidgets.QApplication(sys.argv)
-#     MainWindow = QtWidgets.QMainWindow()
-#     ui = Ui_MainWindow()
-#     ui.setupUi(MainWindow)
-#     # ui.camera()
-#     MainWindow.show()
-#     sys.exit(app.exec_())
