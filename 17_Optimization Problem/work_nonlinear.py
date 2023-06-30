@@ -1,16 +1,15 @@
-import numpy as np
 from scipy.optimize import minimize
 
 def algorithm(input_config):
     constraints = []
     for c in input_config['cons']:
-        c = c.replace('x_1', '-x[0]').replace('x_2', '-x[1]')
+        c = c.replace('x_1', 'x[0]').replace('x_2', 'x[1]')
         if ">=" in c:
-            equation = c.replace(">=", "+(") + ")"
-            constraints.append({'type': 'ineq', 'fun': lambda x, eq=equation: -eval(eq)})
-        elif "<=" in c:
-            equation = c.replace("<=", "+(") + ")"
+            equation = c.replace(">=", "-(") + ")"
             constraints.append({'type': 'ineq', 'fun': lambda x, eq=equation: eval(eq)})
+        elif "<=" in c:
+            equation = c.replace("<=", "-(") + ")"
+            constraints.append({'type': 'ineq', 'fun': lambda x, eq=equation: -eval(eq)})
         else:
             raise ValueError(
                 "Invalid constraint format. Constraints should be in the format: 'expression>=0' or 'expression<=0'.")
@@ -22,10 +21,10 @@ def algorithm(input_config):
 
     initial_point = input_config['initial_point']
 
-    result = minimize(objective_function, initial_point, constraints=constraints , tol=input_config['tol'])
+    result = minimize(objective_function, initial_point,  method='SLSQP', constraints=constraints , tol=input_config['tol'])
 
     obj = result.fun
-    res = result.xz
+    res = result.x
 
     return obj, res
 
