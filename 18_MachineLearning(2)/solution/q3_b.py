@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 # import numpy as np
 # import matplotlib.pyplot as plt
 # from mpl_toolkits.mplot3d import Axes3D
@@ -49,6 +54,10 @@
 # print(hess_yy)
 
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 698c42ce9619684a2a359f9bd2658a0e146a2eff
+>>>>>>> Stashed changes
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
