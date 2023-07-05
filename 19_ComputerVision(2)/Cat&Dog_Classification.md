@@ -32,7 +32,6 @@ based on the accuracy scores, the KNN model outperformed the DT and SGD models i
 
 Based on the provided classification reports and confusion matrices, we can analyze the performance of each classifier as follows:
 
-|Model|Accuracy|Precision (Class 0)|Recall (Class 0)|F1-score (Class 0)|Precision (Class 1)|Recall (Class 1)|F1-score (Class 1)|
 
 |Model|Accuracy|Precision (Class 0)|Recall (Class 0)|F1-score (Class 0)|Precision (Class 1)|Recall (Class 1)|F1-score (Class 1)|
 |--|--|--|--|--|--|--|--|
@@ -62,7 +61,8 @@ Based on the analysis of the models, we can draw the following conclusions:
 |DT|0.579|0.5758|
 |KNN|0.5992|0.6004|
 |SGD|0.5426|0.5466|
-|we can observe the accuracy of the models on the 2:1 training set and the 4:1 test set as follows:|||
+
+we can observe the accuracy of the models on the 2:1 training set and the 4:1 test set as follows:
 
 1. Decision Tree (DT) model:
 
