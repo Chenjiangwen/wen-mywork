@@ -2,9 +2,9 @@
 
 ### When training 10000 images of data, the prediction results of DT, KNN and SGD are as follows:
 
-|### DT|### KNN|### SGD|
+|DT|KNN|SGD|
 |:--:|:--:|:--:|
-|![16884751850951688475181624.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16884751850951688475181624.png)|![16884750707601688475052596.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16884750707601688475052596.png)|![16884751307571688475081858.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16884751307571688475081858.png)|
+|![16885438805121688543879688.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16885438805121688543879688.png)|![16885439217571688543921078.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16885439217571688543921078.png)|![16885440107521688544009813.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16885440107521688544009813.png)|
 
 ### The accuracy is as follows:
 
@@ -12,45 +12,69 @@ We can see that the accuracy of the three methods is between 0.5 and 0.6, and th
 
 |Models|Acc|
 |--|--|
-|DT|0.5762|
-|KNN|0.5736|
-|SGD|0.5416|
+|DT|0.579|
+|KNN|0.5992|
+|SGD|0.5426|
 
 Based on the provided performance results of the classifiers, we can draw the following analysis:
 
-- Decision Tree (DT) classifier has an accuracy of 0.5762, slightly higher than the KNN and SGD classifiers. However, from the classification report, it can be observed that the DT classifier has a higher recall for the positive class (1) (0.67), but a lower recall for the negative class (0) (0.48). This suggests that the DT classifier performs relatively well in identifying the positive class but has some issues in identifying the negative class.
-- K-Nearest Neighbors (KNN) classifier has an accuracy of 0.5736, close to the accuracy of the DT classifier. The classification report of the KNN classifier shows that its recall for the positive class (0.47) is slightly lower than that of the DT classifier, but its recall for the negative class (0.67) is slightly higher. The confusion matrix of the KNN classifier also indicates a significant number of false positives and false negatives, which may affect its performance.
-- Stochastic Gradient Descent (SGD) classifier has the lowest accuracy among the three classifiers, with an accuracy of 0.5416. The classification report and confusion matrix of the SGD classifier demonstrate its poor performance in terms of recall for the positive class (0.22) and a high number of false positives and false negatives. This suggests that the SGD classifier performs relatively poorly on this dataset.
+- The KNN model achieved the highest accuracy score of 0.5992, indicating that it performed better than the other two models. KNN is a non-parametric algorithm that classifies new data points based on their similarity to existing data points. It calculates the distance between the new data point and its neighbors to determine its class. In this case, the KNN algorithm was able to accurately classify the data points more effectively than DT and SGD.
+- The DT model achieved an accuracy score of 0.579, making it the second-best performing model. Decision trees are a type of supervised learning algorithm that creates a tree-like model for decision-making. Each internal node represents a feature or attribute, each branch represents a decision rule, and each leaf node represents the outcome or prediction. The DT model in this case might have been relatively accurate but not as effective as the KNN model in classifying the data.
+- On the other hand, the SGD model achieved the lowest accuracy score of 0.5426. SGD is an optimization algorithm commonly used in training machine learning models, particularly in linear classifiers and regressors. It updates the model's parameters using a different subset of training data in each iteration, making it more efficient for large datasets. However, in this analysis, the SGD model did not perform as well as the other two models, suggesting that it was not able to effectively learn the underlying patterns in the data.
 
-the DT classifier has a certain advantage in the recall for the positive class, while the KNN classifier has a slight advantage in the recall for the negative class. Meanwhile, the SGD classifier exhibits low recall for the positive class and overall poor performance. However, to comprehensively and accurately assess the performance of the classifiers, it is recommended to consider other metrics such as precision, F1-score, and conduct experiments like cross-validation to evaluate the robustness and stability of the classifiers on different datasets.
+based on the accuracy scores, the KNN model outperformed the DT and SGD models in this analysis. The KNN algorithm's ability to classify new data based on similarity to existing data points helped achieve better accuracy. However, further evaluation and analysis, such as considering other performance metrics or conducting cross-validation, may be necessary to make a more comprehensive assessment of the models' performances.
 
 ### When training 20000 images of data, the prediction results of DT, KNN and SGD are as follows:
 
 |DT|KNN|SGD|
 |:--:|:--:|:--:|
-|![16884760907581688476073532.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16884760907581688476073532.png)|![16884761767571688476176159.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16884761767571688476176159.png)|![16884762027591688476202713.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16884762027591688476202713.png)|
+|![16885443097481688544301857.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16885443097481688544301857.png)|![16885443574961688544356509.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16885443574961688544356509.png)|![16885443747561688544373938.png](https://fastly.jsdelivr.net/gh/Chenjiangwen/ImageHostingService@main/pic/16885443747561688544373938.png)|
 
 Based on the provided classification reports and confusion matrices, we can analyze the performance of each classifier as follows:
 
 |Model|Accuracy|Precision (Class 0)|Recall (Class 0)|F1-score (Class 0)|Precision (Class 1)|Recall (Class 1)|F1-score (Class 1)|
+
+|Model|Accuracy|Precision (Class 0)|Recall (Class 0)|F1-score (Class 0)|Precision (Class 1)|Recall (Class 1)|F1-score (Class 1)|
 |--|--|--|--|--|--|--|--|
-|DT|0.5768|0.59|0.52|0.55|0.57|0.63|0.60|
-|KNN|0.5802|0.56|0.70|0.63|0.61|0.46|0.52|
-|SGD|0.5132|0.65|0.06|0.11|0.51|0.97|0.67|
+|DT|0.5758|0.58|0.57|0.58|0.58|0.58|0.58|
+|KNN|0.6004|0.56|0.88|0.69|0.72|0.32|0.45|
+|SGD|0.5466|0.53|0.86|0.66|0.63|0.23|0.34|
 
-Based on these results, we can make the following observations:
+Based on the analysis of the models, we can draw the following conclusions:
 
-- DT and KNN have similar accuracies, with DT slightly lower at 57.68% and KNN slightly higher at 58.02%. SGD has the lowest accuracy at 51.32%.
-- KNN shows a higher precision and recall for class 0 compared to DT, indicating that it performs better at correctly classifying class 0 instances. However, KNN has lower precision and recall for class 1 compared to DT.
-- SGD has the highest precision for class 0 among the three classifiers but has very low recall for class 0. It also has the highest recall for class 1 but the lowest precision for class 1.
-  
-  <br/>
+1. Decision Tree (DT):
+   - The accuracy of the DT model is 0.5758, indicating that it correctly predicts the class labels for approximately 57.58% of the instances.
+   - The precision and recall for both Class 0 and Class 1 are consistent at 0.58, suggesting that the model performs equally well in identifying both classes.
+   - The F1-score, which combines precision and recall, is also 0.58 for both classes. This indicates a balanced performance in terms of precision and recall for both classes.
+2. K-Nearest Neighbors (KNN):
+   - The KNN model achieves an accuracy of 0.6004, implying that it predicts the class labels accurately for around 60.04% of the instances.
+   - The precision for Class 0 is 0.56, which means that when the model predicts Class 0, it is correct 56% of the time. However, the precision for Class 1 is lower at 0.32, indicating more false positive predictions.
+   - The recall for Class 0 is high at 0.88, suggesting that the model effectively captures most of the instances belonging to Class 0. The recall for Class 1 is 0.45, indicating a moderate ability to identify instances of Class 1.
+   - The F1-score for Class 0 is 0.69, indicating a good balance between precision and recall. For Class 1, the F1-score is higher at 0.72, suggesting a better harmonic mean between precision and recall compared to Class 0.
+3. Stochastic Gradient Descent (SGD):
+   - The SGD model has an accuracy of 0.5466, indicating that it correctly predicts the class labels for approximately 54.66% of the instances.
+   - The precision for Class 0 is 0.53, suggesting that the model correctly predicts Class 0 around 53% of the time. The precision for Class 1 is lower at 0.23, indicating a higher number of false positive predictions.
+   - The recall for Class 0 is high at 0.86, indicating a good ability to capture instances of Class 0. The recall for Class 1 is 0.34, suggesting a moderate ability to identify instances of Class 1.
+   - The F1-score for Class 0 is 0.66, indicating a reasonably balanced performance in terms of precision and recall. For Class 1, the F1-score is 0.63, suggesting a fairly balanced harmonic mean between precision and recall.
 
 |Models|2:1|4:1|
 |--|--|--|
-|DT|0.5762|0.5768|
-|KNN|0.5736|0.5802|
-|SGD|0.5416|0.5132|
+|DT|0.579|0.5758|
+|KNN|0.5992|0.6004|
+|SGD|0.5426|0.5466|
+|we can observe the accuracy of the models on the 2:1 training set and the 4:1 test set as follows:|||
+
+1. Decision Tree (DT) model:
+
+- The accuracy on the 2:1 training set is 0.579, while on the 4:1 test set, it is 0.5758. This suggests that the model performs consistently on both the training and test sets, demonstrating a certain level of generalization ability.
+
+2. K-Nearest Neighbors (KNN) model:
+
+- The accuracy on the 2:1 training set is 0.5992, and on the 4:1 test set, it is 0.6004. This indicates that the model's performance is relatively stable on both the training and test sets, with slightly higher accuracy on the test set.
+
+3. Stochastic Gradient Descent (SGD) model:
+
+- The accuracy on the 2:1 training set is 0.5426, while on the 4:1 test set, it is 0.5466. This suggests that the model's performance is consistent on both the training and test sets, without any significant signs of overfitting or underfitting.
 
 Increasing the training data does not always lead to a significant improvement in performance. Here are some possible reasons and considerations:
 
